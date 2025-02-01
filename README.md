@@ -21,15 +21,12 @@ Before running the application, ensure you have the following installed:
 
 1. **Download Olla**
 
-**For Windows:**
-Visit the official Ollama website.
-Download the Windows installer.
+   **For Windows:**
+   Visit the official Ollama website https://ollama.com/download. Download the Windows installer.
 
-![image](https://github.com/user-attachments/assets/df5a21ab-2eec-4c28-a81c-90d1e0938332)
-
-After installation, verify it by running the following command in PowerShell:
-
-![image](https://github.com/user-attachments/assets/31d258fd-1292-471f-9553-c9b858a4cd71)
+   After installation, verify it by running the following command in PowerShell:
+   
+   ![image](https://github.com/user-attachments/assets/31d258fd-1292-471f-9553-c9b858a4cd71)
 
 2. **Pulling and Running the DeepSeek-r1:1.5b Model**
    With Ollama installed, it's time to pull the DeepSeek-r1:1.5b model and run it locally.
