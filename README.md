@@ -30,10 +30,12 @@ Before running the application, ensure you have the following installed:
 
 2. **Pulling and Running the DeepSeek-r1:1.5b Model**
 
-   With Ollama installed, it's time to pull the DeepSeek-r1:1.5b model and run it locally.
+   With Ollama installed, it's time to pull the DeepSeek-r1:1.5b model and run it locally. </br>
    How to Pull the DeepSeek Model
    - Open your terminal or command prompt.
-   - Type the following command to pull the model: </br>
+   - Type the following command to pull the model:
+  
+  
    ```
    ollama pull deepseek-r1:1.5b
    ```
