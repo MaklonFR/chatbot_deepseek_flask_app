@@ -11,13 +11,41 @@ A simple Flask-based web application for interacting with a chatbot. This projec
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
-
-- Python 3.7 or higher
-- pip (Python package manager)
+- Python (preferably version 3.7 or higher)
+- Flask (for creating the web server)
+- Ollama (for running DeepSeek locally)
+- DeepSeek Model (deepseek-r1:1.5b)
+- Text Editor/IDE (like VSCode, PyCharm, or Sublime Text)
 
 ## Installation
 
-1. **Clone the repository**:
+1. **Download Olla**
+
+**For Windows:**
+Visit the official Ollama website.
+Download the Windows installer.
+
+![image](https://github.com/user-attachments/assets/df5a21ab-2eec-4c28-a81c-90d1e0938332)
+
+After installation, verify it by running the following command in PowerShell:
+
+![image](https://github.com/user-attachments/assets/31d258fd-1292-471f-9553-c9b858a4cd71)
+
+2. **Pulling and Running the DeepSeek-r1:1.5b Model**
+   With Ollama installed, it's time to pull the DeepSeek-r1:1.5b model and run it locally.
+   How to Pull the DeepSeek Model
+   - Open your terminal or command prompt.
+   - Type the following command to pull the model:
+   ```
+   ollama run deepseek-r1:1.5b
+   ```
+3. **Checking Available Models Using ollama list**
+   ```
+   ollama list
+   ```
+   This will display all the models you have pulled and installed, including their version numbers. You can use this to verify that DeepSeek-r1:1.5b is available and ready to be used.
+
+4 . **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/chatbot_deepseek_flask_app.git
    cd chatbot_deepseek_flask_app
