@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT-like Web Chatbot</title>
+    <style>
+        .chat-box1 {
+            height: 10%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+        }
+        /* Basic reset and layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            position: relative;
+            width: 720px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .chat-box {
+            height: 70%;
+            overflow-y: scroll;
+            margin-bottom: 40px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            white-space: pre-wrap; /* Allows multiline code */
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 70%;
+        }
+
+        .user {
+            background-color: #d1e7ff;
+            margin-left: auto;
+            text-align: right;
+            border-radius: 10px 10px 0 10px;
+        }
+
+        /* Code Block Styling */
+        pre {
+            background-color: #282c34;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;  /* Makes sure long lines wrap in the code block */
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+
+        /* Styling for code blocks with syntax highlighting */
+        pre code {
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .user-input {
+            width: calc(100% - 70px);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            width: 60px;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Scrollbar customization */
+        .chat-box::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-box::-webkit-scrollbar-thumb {
+            background-color: #c1c1c1;
+            border-radius: 5px;
+        }
+
+        .chat-box::-webkit-scrollbar-track {
+            background-color: #f0f0f0;
+        }
+
+        .from-chat {
+            position: absolute;
+            width: 75%;
+            bottom: 10px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%); /* Centers the form horizontally */
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between input and button */
+        }
+
+         /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        h2 {
+         text-align : center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <h2 >
+            What can I help you?
+        </h2>
+        {% if user_input %}
+            <div id="chat-box1" class="chat-box1"> {{ user_input }} </div>
+            <div id="chat-box" class="chat-box">{{ bot_response }} </div>
+        {% endif %}
+        <div class="from-chat">
+            <form method="POST">
+                <input type="text" name="user_input" class="user-input" placeholder="Ask me something..." value="{{ user_input }}" required >
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Chatbot Using Flask Ollama Deepseek Model </p>
+    </footer>
+
+</body>
+</html>
