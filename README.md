@@ -29,38 +29,40 @@ Before running the application, ensure you have the following installed:
    ![image](https://github.com/user-attachments/assets/31d258fd-1292-471f-9553-c9b858a4cd71)
 
 2. **Pulling and Running the DeepSeek-r1:1.5b Model**
+
    With Ollama installed, it's time to pull the DeepSeek-r1:1.5b model and run it locally.
    How to Pull the DeepSeek Model
    - Open your terminal or command prompt.
    - Type the following command to pull the model:
+
    ```
    ollama run deepseek-r1:1.5b
    ```
-3. **Checking Available Models Using ollama list**
+4. **Checking Available Models Using ollama list**
    ```
    ollama list
    ```
    This will display all the models you have pulled and installed, including their version numbers. You can use this to verify that DeepSeek-r1:1.5b is available and ready to be used.
 
-4 . **Clone the repository**:
+5 . **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/chatbot_deepseek_flask_app.git
    cd chatbot_deepseek_flask_app
    
-2. **Set up a virtual environment:**
+6. **Set up a virtual environment:**
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
-3. **Install dependencies:**
+7. **Install dependencies:**
    ```
    pip install -r requirements.txt
    ```
-4. **Run the Flask application:**
+8. **Run the Flask application:**
    ```
    flask run
    ```
-6. **Access the application:**
+9. **Access the application:**
 
    Open your browser and go to
    ```
