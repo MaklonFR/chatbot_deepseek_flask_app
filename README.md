@@ -41,3 +41,8 @@ Before running the application, ensure you have the following installed:
    ```
    http://127.0.0.1:5000.
    ```
+
+## Result
+
+![image](https://github.com/user-attachments/assets/ff7ac66d-574b-4c77-aa67-beb45bdd3a3e)
+
