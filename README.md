@@ -37,6 +37,7 @@ Before running the application, ensure you have the following installed:
    ```
    ollama pull deepseek-r1:1.5b
    ```
+   This command will download the model, which may take some time depending on your internet speed and system resources.
 3. **Checking Available Models Using ollama list**
    ```
    ollama list
