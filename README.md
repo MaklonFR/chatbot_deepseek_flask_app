@@ -19,7 +19,7 @@ Before running the application, ensure you have the following installed:
 
 ## Installation
 
-1. **Download Olla**
+1. **Download Ollama**
 
    **For Windows:**
    Visit the official Ollama website https://ollama.com/download. Download the Windows installer.
@@ -34,6 +34,7 @@ Before running the application, ensure you have the following installed:
    How to Pull the DeepSeek Model
    - Open your terminal or command prompt.
    - Type the following command to pull the model:
+     
    ```
    ollama run deepseek-r1:1.5b
    ```
