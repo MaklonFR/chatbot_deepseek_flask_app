@@ -32,5 +32,10 @@ Before running the application, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 4. **Run the Flask application:**
-   `flask run`
-5. Open your browser and go to `http://127.0.0.1:5000.`
+   ```
+   flask run
+   ```
+6. Open your browser and go to
+   ```
+   http://127.0.0.1:5000.
+   ```
