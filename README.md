@@ -23,14 +23,14 @@ Before running the application, ensure you have the following installed:
    cd chatbot_deepseek_flask_app
    
 2. **Set up a virtual environment:**
-```
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-```
-4. **Install dependencies:**
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+3. **Install dependencies:**
    ```
    pip install -r requirements.txt
    ```
-5. **Run the Flask application:**
+4. **Run the Flask application:**
    `flask run`
-7. Open your browser and go to `http://127.0.0.1:5000.`
+5. Open your browser and go to `http://127.0.0.1:5000.`
