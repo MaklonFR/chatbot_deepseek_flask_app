@@ -47,8 +47,8 @@ Before running the application, ensure you have the following installed:
 
 5. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/chatbot_deepseek_flask_app.git
-   cd chatbot_deepseek_flask_app
+   git clone https://github.com/yourusername/deepseek-R1-flask.git
+   cd deepseek-R1-flask
    
 6. **Set up a virtual environment:**
    ```
